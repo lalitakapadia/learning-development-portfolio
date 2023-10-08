@@ -2,35 +2,119 @@
     padding: 0;
     margin: 0;
     font-family: sans-serif;
-
 }
+
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 20px 0;
-    background-color: blue;
+    padding: 10px;
+    background-color: rgb(111, 143, 175);
 }
+
 header h1{
     padding: 5px 30px;
-    background-color: greenyellow;
 }
+
 header nav {
     margin-right: 20px;
 }
+
 header a {
     margin: 2px 5px;
     text-decoration: none;
     color: beige;
     border-bottom: 3px solid beige;
 }
+
 .banner {
+    display: grid;
     min-height: 30vh;
-    background-color: gray;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    text-align: right;
-    padding: 20px;
+    padding: 10px;
 }
+
+img {
+    height: 200px;
+    width: 200px;
+}
+
+.aboutme{
+    font-size: 25px;
+    font-weight: bold;
+    background-color: rgba(165, 42, 42, 0.411);
+    padding: 10px;
+}
+
+.work{
+    display: grid;
+    padding: 10px;
+}
+
+.work div{
+    background-image: linear-gradient(
+        rgba(143, 8, 148, 0.3) 0%,
+        rgba(232, 102, 236, 0.6) 100%
+    );
+    padding: 10px;
+    margin: 2px;
+}
+
+.contact {
+    display: grid;
+    padding: 10px;
+    
+}
+
+.contact div{
+    background-image: linear-gradient(
+        rgba(8, 22, 148, 0.3) 0%,
+        rgba(102, 182, 236, 0.6) 100%
+    );
+    height: 5vh;
+    padding: 10px;
+    margin: 2px;
+}
+
+.contact div:nth-child(1) {
+    background-color: bisque;
+}
+
+  /* desktop - header changes color */
+  @media screen and (min-width: 768px) {
+    .banner{
+      grid-template-columns: 20% 80%;
+    }
+    .work {
+        grid-template-columns: auto auto;
+    }
+    .contact {
+        grid-template-columns: auto auto auto auto auto auto;
+    }
+  }
+  
+  /* tablet - navbar changes color */
+  @media screen and (max-width: 768px) {
+    .banner{
+        grid-template-columns: 20% 80%;
+      }
+    .work {
+        grid-template-columns: auto auto;
+    }
+    .contact {
+        grid-template-columns: auto auto auto auto auto auto;
+    }
+  }
+  
+  /* Small smartphones - image placeholders change color */
+  @media screen and (max-width: 576px) {
+    .banner{
+        grid-template-columns: auto;
+    }
+    .work {
+        grid-template-columns: auto;
+    }
+    .contact {
+        grid-template-columns: auto;
+    }
+  }
