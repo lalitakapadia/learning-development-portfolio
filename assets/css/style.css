@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: sans-serif;
 
 }
 header{
@@ -9,11 +10,11 @@ header{
     align-items: center;
     flex-wrap: wrap;
     padding: 20px 0;
-    background-color: brown;
+    background-color: blue;
 }
 header h1{
     padding: 5px 30px;
-    background-color: darkslategray;
+    background-color: greenyellow;
 }
 header nav {
     margin-right: 20px;
@@ -24,12 +25,12 @@ header a {
     color: beige;
     border-bottom: 3px solid beige;
 }
-.benner {
+.banner {
     min-height: 30vh;
-    background-color: aquamarine;
+    background-color: gray;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     text-align: right;
-    padding: ;
+    padding: 20px;
 }
