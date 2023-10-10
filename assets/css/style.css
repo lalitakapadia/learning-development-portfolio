@@ -34,16 +34,28 @@ header a {
     padding: 10px;
 }
 
-img {
-    height: 200px;
-    width: 200px;
+.banner div{
+    margin: 10px;
 }
 
-.aboutme{
+img {
+    height: 100%;
+    width: 100%;
+    border: solid;
+    border-radius: 180px;
+    border-color: rgb(111, 143, 175);
+}
+
+
+
+.banner div:nth-child(2){
     font-size: 25px;
     font-weight: bold;
-    background-color: rgba(165, 42, 42, 0.411);
     padding: 10px;
+    border-radius: 10px;
+    border:solid;
+    border-color: rgb(111, 143, 175);
+    background-color: white;
 }
 
 .work{
@@ -52,12 +64,13 @@ img {
 }
 
 .work div{
-    background-image: linear-gradient(
-        rgba(143, 8, 148, 0.3) 0%,
-        rgba(232, 102, 236, 0.6) 100%
-    );
+    
     padding: 10px;
-    margin: 2px;
+    margin: 10px;
+    border: dashed;
+    border-color: rgb(111, 143, 175);
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #aaaaaa;
 }
 
 .contact {
@@ -67,17 +80,17 @@ img {
 }
 
 .contact div{
-    background-image: linear-gradient(
-        rgba(8, 22, 148, 0.3) 0%,
-        rgba(102, 182, 236, 0.6) 100%
-    );
+    background-color: rgb(111, 143, 175);
     height: 5vh;
     padding: 10px;
-    margin: 2px;
+    margin: 5px;
+    border-radius: 10px;
+    text-align: center;
 }
 
 .contact div:nth-child(1) {
-    background-color: bisque;
+    color: white;
+    font-size: 30px;
 }
 
   /* desktop - header changes color */
